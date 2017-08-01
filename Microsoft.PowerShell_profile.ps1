@@ -11,7 +11,7 @@ function make-node([string]$projectName, [string]$info){
 }
 
 function ffs($program){
-    runas $program /user:
+    runas $program /user:<DOMAIN\USERNAME>
 }
 
 function prompt   
