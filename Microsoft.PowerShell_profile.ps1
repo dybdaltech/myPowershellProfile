@@ -1,4 +1,5 @@
 new-alias grep sls
+
 function make-node([string]$projectName, [string]$info){
     mkdir $projectName
     Set-Location $projectName
