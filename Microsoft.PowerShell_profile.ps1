@@ -28,3 +28,7 @@ function prompt
 
     else { "[$env:COMPUTERNAME] " }) + $(if ($nestedpromptlevel -ge 1) { '>>' }) + '> '  
 }
+
+function vim($file){
+    bash -c "vim $file"
+}
