@@ -22,6 +22,7 @@ function vim($file){
 function vhelp(){
     Write-Host "Vue init webpack *project name*"
     Write-Host "CD into it. And do npm run dev"
+    Write-Host "`t"
 }
 
 function boilnode($pname) {
@@ -32,7 +33,7 @@ function boilnode($pname) {
 function help-custom () {
     Write-Host "Func Vim <file>"
     Write-Host "vhelp"
-    Write-Host "boilnode(<project_name>)"
+    Write-Host "boilnode(<project_name>"
     Write-Host "Hero == Heroku"
     Write-Host "sh-nmap"
     Write-Host "cd-web/pro <folder>"
@@ -47,11 +48,11 @@ function flask-start(){
 }
 
 function cd-web($projectName){
-    cd "C:\Users\[USERNAME]\Onedrive\Web\$projectName"
+    cd "C:\Users\xxx\Onedrive\Web\$projectName"
 }
 
 function cd-pro($projectName){
-    cd "C:\Users\[USERNAME]\Onedrive\Programming\$projectName"
+    cd "C:\Users\xxx\Onedrive\Programming\$projectName"
 }
 
 function start-venv(){
@@ -71,7 +72,7 @@ function ..([string]$task){
 }
 
 function rr (){
-    bash -c "vim /mnt/c/Users/[USERNAME]/OneDrive/todo.txt"
+    bash -c "vim /mnt/c/Users/xxx/OneDrive/todo.txt"
 }
 
 function get-ipInfo ($IPAdress){
@@ -100,3 +101,4 @@ function get-dnsInfo ([string]$hostname) {
     }
     Invoke-RestMethod -Method GET -Uri "http://api.db-ip.com/v2/free/$adr"
 }
+#Updated 27.06.2018
